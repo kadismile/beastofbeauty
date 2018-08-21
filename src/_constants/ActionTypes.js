@@ -1,0 +1,38 @@
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+export const DISPLAY_PRODUCT = 'DISPLAY_PRODUCT';
+export const DISPLAY_CART_PRODUCT = 'DISPLAY_CART_PRODUCT';
+export const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
+export const RESET_PRODUCTS = 'RESET_PRODUCTS';
+export const SEARCH_TERM_CHANGED = 'SEARCH_TERM_CHANGED';
+export const BEST_SELLER= 'BEST_SELLER';
+export const FEATURED_PRODUCT= 'FEATURED_PRODUCT';
+export const FETCH_SOME_PRODUCTS = 'FETCH_SOME_PRODUCTS';
+
+
+//////////////CATEGORY CONSTANTS//////////////////////
+
+export const ALL_CATEGORY = 'ALL_CATEGORY';
+export const RETRIEVE_PRODUCT_CATEGORY = 'RETRIEVE_PRODUCT_CATEGORY';
+export const CASE_NAIRA = 'CASE_NAIRA';
+export const CASE_DOLLAR = 'CASE_DOLLAR';
+export const CASE_EURO = 'CASE_EURO';
+export const CASE_POUND = 'CASE_POUND';
+
+//////////////CATEGORY CONSTANTS END//////////////////////
+
+
+
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+export const CLEAR_CART = 'CLEAR_CART';
+export const CHECKOUT_REQUEST = 'CHECKOUT_REQUEST';
+export const CHECKOUT_FAILURE = 'CHECKOUT_FAILURE';
+export const CHANGE_QTY = 'CHANGE_QTY';
+
+
+
+export const IS_AUTHENTICATED = 'IS_AUTHENTICATED';
+export const IS_LOGGED_OUT = 'IS_LOGGED_OUT';
+
+
+
