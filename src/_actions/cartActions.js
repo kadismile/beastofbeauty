@@ -1,4 +1,5 @@
 import * as type from '../_constants/ActionTypes'
+import * as authorize from '../_constants/ApiConstants'
 import axios from 'axios'
 export const cartActions = {
 
@@ -16,10 +17,10 @@ export const cartActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products/${productId}`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products/${productId}`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfMDQ0OGM5N2VhYzVkMDhhZWI5NDQ3Mjc1OTY0MzIzNDdjOGUyYzU2Yzpjc19kNDRjMzhiOWMyMDcxOTllZTIzZTBjZThhMTI5OTRkMGRmYWVjOGFi",
+                    "authorization": authorize.authorization,
                 }
             };
 
@@ -42,10 +43,10 @@ export const cartActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products/${id}`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products/${id}`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfMDQ0OGM5N2VhYzVkMDhhZWI5NDQ3Mjc1OTY0MzIzNDdjOGUyYzU2Yzpjc19kNDRjMzhiOWMyMDcxOTllZTIzZTBjZThhMTI5OTRkMGRmYWVjOGFi",
+                    "authorization": authorize.authorization,
                 }
             };
 

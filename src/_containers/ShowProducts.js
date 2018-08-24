@@ -72,6 +72,7 @@ class ShowProducts extends Component {
 
 
     render() {
+        console.log(this.props.match)
         let product, myimages;
         _.map(this.props.products, (data) =>{
             return product = data;

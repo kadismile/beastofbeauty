@@ -1,4 +1,5 @@
 import * as type from '../_constants/ActionTypes'
+import * as authorize from '../_constants/ApiConstants'
 import axios from 'axios'
 export const productActions = {
 
@@ -67,10 +68,10 @@ export const productActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products?category=${id}&&per_page=20`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products?category=${id}&&per_page=20`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfODg5OWUyZjY2NTg3YTExZDZiMWIwNjQxODlmNmU0MTI3NmY1NTM4YTpjc18wYjcwOGY1YWY2YjZiNzRhMjc4MGY1M2FiNDliMTlmNTI2ZTI0ZjJi",
+                    "authorization": authorize.authorization
                 }
             };
             axios(settings).then((response) => {
@@ -95,10 +96,10 @@ export const productActions = {
         let settings = {
             "async": true,
             "crossDomain": true,
-            "url": `https://localhost/mama-ankara/wp-json/wc/v2/products?search=${searchTerm}`,
+            "url": `${authorize.apiUrl}/wp-json/wc/v2/products?search=${searchTerm}`,
             "method": "GET",
             "headers": {
-                "authorization": "Basic Y2tfMDQ0OGM5N2VhYzVkMDhhZWI5NDQ3Mjc1OTY0MzIzNDdjOGUyYzU2Yzpjc19kNDRjMzhiOWMyMDcxOTllZTIzZTBjZThhMTI5OTRkMGRmYWVjOGFi",
+                "authorization": authorize.authorization
             }
         };
 
@@ -117,10 +118,10 @@ export const productActions = {
         let settings = {
             "async": true,
             "crossDomain": true,
-            "url": `https://localhost/mama-ankara/wp-json/wc/v1/products?order=asc&&per_page=20`,
+            "url": `${authorize.apiUrl}/wp-json/wc/v1/products?order=asc&&per_page=20`,
             "method": "GET",
             "headers": {
-                "authorization": "Basic Y2tfODg5OWUyZjY2NTg3YTExZDZiMWIwNjQxODlmNmU0MTI3NmY1NTM4YTpjc18wYjcwOGY1YWY2YjZiNzRhMjc4MGY1M2FiNDliMTlmNTI2ZTI0ZjJi",
+                "authorization": authorize.authorization
             }
         };
 
@@ -144,10 +145,10 @@ export const productActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products?category=${id}&&per_page=20`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products?category=${id}&&per_page=20`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfODg5OWUyZjY2NTg3YTExZDZiMWIwNjQxODlmNmU0MTI3NmY1NTM4YTpjc18wYjcwOGY1YWY2YjZiNzRhMjc4MGY1M2FiNDliMTlmNTI2ZTI0ZjJi",
+                    "authorization": authorize.authorization
                 }
             };
             axios(settings).then((response) => {
@@ -163,10 +164,10 @@ export const productActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products?category=${id}&&per_page=20`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products?category=${id}&&per_page=20`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfODg5OWUyZjY2NTg3YTExZDZiMWIwNjQxODlmNmU0MTI3NmY1NTM4YTpjc18wYjcwOGY1YWY2YjZiNzRhMjc4MGY1M2FiNDliMTlmNTI2ZTI0ZjJi",
+                    "authorization": authorize.authorization
                 }
             };
             axios(settings).then((response) => {
@@ -183,10 +184,10 @@ export const productActions = {
         let settings = {
             "async": true,
             "crossDomain": true,
-            "url": `https://localhost/mama-ankara/wp-json/wc/v2/products?slug=${slug}`,
+            "url": `${authorize.apiUrl}/wp-json/wc/v2/products?slug=${slug}`,
             "method": "GET",
             "headers": {
-                "authorization": "Basic Y2tfMDQ0OGM5N2VhYzVkMDhhZWI5NDQ3Mjc1OTY0MzIzNDdjOGUyYzU2Yzpjc19kNDRjMzhiOWMyMDcxOTllZTIzZTBjZThhMTI5OTRkMGRmYWVjOGFi",
+                "authorization": authorize.authorization
             }
         };
 
@@ -211,10 +212,10 @@ export const productActions = {
             let settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": `https://localhost/mama-ankara/wp-json/wc/v2/products/${id}`,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products/${id}`,
                 "method": "GET",
                 "headers": {
-                    "authorization": "Basic Y2tfMDQ0OGM5N2VhYzVkMDhhZWI5NDQ3Mjc1OTY0MzIzNDdjOGUyYzU2Yzpjc19kNDRjMzhiOWMyMDcxOTllZTIzZTBjZThhMTI5OTRkMGRmYWVjOGFi",
+                    "authorization": authorize.authorization
                 }
             };
 

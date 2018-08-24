@@ -67,6 +67,7 @@ class ShowCategoryProduct extends Component {
   render(){
 
 
+
       return(
           ( this.props.products === undefined || this.state.product_id === this.props.product_id) ? (loader ) :
           <div>

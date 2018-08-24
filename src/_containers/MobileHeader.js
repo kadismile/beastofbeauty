@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import {categoryActions} from '../_actions/categoryActions'
 import {Link} from 'react-router-dom'
 
+
+const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> </div>
 class MobileHeader extends Component{
 
     componentDidMount(){
@@ -13,6 +15,7 @@ class MobileHeader extends Component{
     }
 
     render(){
+
         return(<div>
                 <div id="mobile-menu">
                     <ul>
@@ -31,6 +34,7 @@ class MobileHeader extends Component{
                     <div className="top-links">
                         <ul className="links">
                             {
+                                ( this.props.products === undefined) ? (loader ) :
                                 this.props.category.map((category, index) => {
                                     return (
                                         <li key={index}>
