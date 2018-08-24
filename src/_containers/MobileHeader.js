@@ -17,7 +17,7 @@ class MobileHeader extends Component{
     render(){
 
         return(<div>
-                <div id="mobile-menu">
+                <div id="mobile-menu" style={{position: 'fixed'}}>
                     <ul>
                         <li>
                             <div className="mm-search">
@@ -34,7 +34,7 @@ class MobileHeader extends Component{
                     <div className="top-links">
                         <ul className="links">
                             {
-                                ( this.props.products === undefined) ? (loader ) :
+                                ( this.props.category === undefined) ? (loader ) :
                                 this.props.category.map((category, index) => {
                                     return (
                                         <li key={index}>
