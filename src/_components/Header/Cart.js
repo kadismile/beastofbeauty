@@ -43,7 +43,7 @@ const Cart = (props)=>{
 
 
             <div>
-                <div className="top-cart-content">
+                <div className="top-cart-content hidden-xs">
 
                     <ul className="mini-products-list" id="cart-sidebar">
 

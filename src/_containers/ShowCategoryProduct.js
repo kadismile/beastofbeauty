@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import ProductItem from '../_components/Product/ProductItem'
 import {cartActions} from '../_actions/cartActions'
 import {productActions} from '../_actions/productActions'
-const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '550px'}}></div></div>
+const loader = <div className="data-loading" style={{marginTop: '100px'}}> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '500px'}}></div></div>
 
 class ShowCategoryProduct extends Component {
 
@@ -12,15 +12,16 @@ class ShowCategoryProduct extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            product_id: 1
+            product_id: this.props.location.state.id
         }
     }
 
     componentDidMount(){
-     setTimeout(() => {
-         this.props.onclickCategory(this.props.product_id);
+        setTimeout(() => {
+            window.scroll(0, 0);
+            this.props.onclickCategory(this.props.location.state.id);
+        }, 1500);
 
-        }, 1500)
     }
 
     addedToCart=(id)=>{
@@ -43,6 +44,7 @@ class ShowCategoryProduct extends Component {
         }
         return string.toUpperCase()
     };
+
    componentWillReceiveProps(nextProps) {
 
         if(nextProps.match.url !== this.props.match.url) {
@@ -58,18 +60,19 @@ class ShowCategoryProduct extends Component {
             setTimeout(() => {
                 this.props.onclickCategory(this.id)
                 this.props.resetProduct()
-            }, 1000);
+            }, 1500);
         }
+
     }
 
 
 
   render(){
 
-
+      console.log(this.props.location.state.id);
 
       return(
-          ( this.props.products === undefined || this.state.product_id === this.props.product_id) ? (loader ) :
+          ( this.props.products === undefined) ? (loader ) :
           <div>
                   <section className="main-container col2-left-layout">
                       <div className="container">

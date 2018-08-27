@@ -15,7 +15,12 @@ import {authActions} from "../_actions/authActions";
 
 class Header extends Component {
 
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            menuDisplay: 'block'
+        }
+    }
     componentDidMount(){
         setTimeout(() => {
             this.props.onAllCategory();
@@ -23,13 +28,6 @@ class Header extends Component {
 
     }
 
-    /*cartProducts =()=>{
-        let cartProducts = [];
-        for (let key in this.props.cart.quantityById) {
-            console.log(key * 2/!*cart.quantityById[key]*!/ );
-
-        }
-    };*/
 
     removeFromCart=(productId, index)=>{
        this.props.onremoveFromCart(productId, index);
@@ -40,19 +38,11 @@ class Header extends Component {
     formSubmited = (event)=> {
         event.preventDefault();
 
-        /*alert(this.props.searchTerm)*/
 
         setTimeout(() => {
             this.props.onsearchProduct(this.props.searchTerm);
         }, 1500);
 
-        /*setTimeout(() => {
-            this.props.onsearchTermChanged('');
-        }, 3000);*/
-           /*this.props.onsearchTermChanged('');*/
-
-
-            // window.location.href = `http://localhost:3000/search/${this.props.searchTerm}`;
 
             this.props.history.push({
                 pathname: '/search/'+this.props.searchTerm,
@@ -149,21 +139,6 @@ class Header extends Component {
                                        style={{marginTop: -5 + 'px',marginBottom: 0 + 'px', width: 66 + '%'}}/>
                                    </Link>
 
-                                   {/*<a href="/">
-                                       <img alt="Magento Commerce" src={require('../assets/images/logo1.png')}
-                                         style={{marginTop: -5 + 'px',marginBottom: 0 + 'px', width: 66 + '%'}}/>
-                                   </a>*/}
-
-                                   {/*<a href="/">
-                                       <img alt="Magento Commerce" src={require('../assets/images/logo5.png')}
-                                         style={{marginTop: -5 + 'px',marginBottom: 0 + 'px', width: 66 + '%'}}/>
-                                   </a>*/}
-                                  {/* <Link title="Magento Commerce"
-                                       to={{
-                                           pathname: '/',
-                                       }}>
-
-                                   </Link>*/}
                                </div>
 
                            </div>
@@ -179,22 +154,11 @@ class Header extends Component {
 
 
 
-                           <div className="col-lg-2 col-md-3 col-sm-3 col-xs-12 card_wishlist_area visible-xs-block">
+                           <div className="col-lg-2 col-md-3 col-sm-3 col-xs-12 card_wishlist_area hidden-xs">
                                <div className="mm-toggle-wrap">
                                    <div className="mm-toggle"><i className="fa fa-align-justify"></i><span className="mm-label">Menu</span> </div>
                                </div>
-                               <Link title="Beast Of Beauty"
-                                     to={{
-                                         pathname: '/'
-                                     }}>
-                                   <img alt="Magento Commerce" src={require('../assets/images/logo1.png')}
-                                        style={{
-                                            marginTop: 2 + 'px',
-                                            marginBottom: 0 + 'px',
-                                            width: '36%',
-                                            marginLeft: '113px'
-                                        }}/>
-                               </Link>
+
                                <div className="top-cart-contain">
 
                                 <Cart
@@ -203,6 +167,7 @@ class Header extends Component {
                                      selected={this.props.selected}
                                      removeFromCart={this.removeFromCart}
                                      cartProducts={this.props.cart/*.shoppingCartProducts.slice(1)*/}
+                                     className="hidden-xs"
                                  />
 
                                    <div id="ajaxconfig_info" style={{display:'none'}}> <a href="/">.</a>
@@ -226,6 +191,7 @@ class Header extends Component {
                               categories={this.props.category}
                               /*clickCategory={this.clickCategory.bind(this)}*/
                               product={this.props.products}
+                              menuDisplay={this.state.menuDisplay}
 
                           />
                    }
@@ -323,6 +289,30 @@ class Header extends Component {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
+                           {/* ############mobile header goes here ##########*/}
                            <div className="col-lg-2 col-md-3 col-sm-3 col-xs-12 card_wishlist_area visible-xs-block"
                            style={{position: 'fixed',zIndex: 1000}}>
                                <div className="mm-toggle-wrap">
@@ -340,7 +330,7 @@ class Header extends Component {
                                             marginLeft: '113px'
                                         }}/>
                                </Link>
-                               <div className="top-cart-contain">
+                               <div className="top-cart-contain visible-xs">
 
                                    <Cart
                                        cart={this.props.cart}
@@ -379,8 +369,25 @@ class Header extends Component {
                                </div>
 
                            </div>
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+                           {/* mobile header ends here */}
+
+
                        </div>
                    </div>
+
+
+
+
                    <nav className="hidden-xs">
                        <div className="nav-container">
 

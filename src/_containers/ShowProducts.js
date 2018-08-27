@@ -7,7 +7,7 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import {productActions} from '../_actions/productActions'
 import {cartActions} from "../_actions/cartActions";
-const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '550px'}}></div></div>
+const loader = <div className="data-loading" style={{marginTop: '100px'}}> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '500px'}}></div></div>
 
 class ShowProducts extends Component {
 
@@ -42,6 +42,7 @@ class ShowProducts extends Component {
         window.scroll(0, 0); //scroll to the top
         setTimeout(() => {
             this.props.onfetchProductBySlug(this.props.match.params.product_name); //fetch product by slug
+            document.getElementById('display').style.display = "none";
         }, 1500);
     }
 
@@ -72,7 +73,7 @@ class ShowProducts extends Component {
 
 
     render() {
-        console.log(this.props.match)
+
         let product, myimages;
         _.map(this.props.products, (data) =>{
             return product = data;

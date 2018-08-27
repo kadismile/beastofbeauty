@@ -4,7 +4,8 @@ import {categoryActions} from '../_actions/categoryActions'
 import {Link} from 'react-router-dom'
 
 
-const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> </div>
+const loader = <div className="data-loading" style={{marginTop: '100px'}}> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '500px'}}></div></div>
+
 class MobileHeader extends Component{
 
     componentDidMount(){
@@ -37,14 +38,15 @@ class MobileHeader extends Component{
                                 ( this.props.category === undefined) ? (loader ) :
                                 this.props.category.map((category, index) => {
                                     return (
-                                        <li key={index}>
+                                        <li key={index} className="mm-toggle" style={{padding: '7px 25px'}}>
                                             <Link
                                                 to={{
                                                     pathname: `/category/${dashString(category.name)}`,
                                                     state: { id: category.id, name:category.name}
-                                                }}>
+                                                }}  /**/>
                                                 {category.name}
                                             </Link>
+
                                         </li>
                                     )
                                 })

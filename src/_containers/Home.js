@@ -10,7 +10,8 @@ import RevSlider, { Slide} from 'react-rev-slider';
 
 
 
-const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> </div>
+const loader = <div className="data-loading" style={{marginTop: '100px'}}> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '500px'}}></div></div>
+
 
 class Home extends Component {
 
@@ -18,17 +19,24 @@ class Home extends Component {
         super(props);
         this.state = {
             addTOCart: false,
-            buttonState: ''
+            buttonState: '',
+            menuDisplay: 'block'
         };
+
+       /* window.onload =()=>{
+            document.getElementById('display').style.display = "block";
+        };*/
+
+
     }
 
     componentDidMount(){
+        document.getElementById('display').style.display = "block";
         $("#addToCart").hide();
         setTimeout(() => {
             this.props.onFetchProducts();
             this.props.onFetcFeaturedProducts(612);
             this.props.onFetchBestsellerProducts(917);
-            //this.props.resetProduct();
         }, 1000)
     }
 
@@ -70,6 +78,7 @@ class Home extends Component {
        return(
 
            <div>
+               <div id="display">&nbsp;</div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 col-md-4 col-sm-3 hidden-xs">
@@ -124,7 +133,7 @@ class Home extends Component {
             </div>
 
 
-            <section className="main-container col2-left-layout" style={{marginTop: '100px'}}>
+            <section className="main-container col2-left-layout" style={{marginTop: '20px'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-9 col-sm-push-3">
@@ -189,7 +198,8 @@ class Home extends Component {
 
                                                                 {
                                                              ( this.props.products === undefined) ? (loader ) :
-                                                                <ProductItem
+                                                                 //document.getElementById('display').style.display = "block";
+                                                                 <ProductItem
                                                                     products={this.props.products.slice(16)} //props of product to child
                                                                     currency={this.props.currency} //props of currency to child
                                                                     dispalyProduct={this.dispalyProduct}
@@ -422,6 +432,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
+
     return{
 
         products: state.product.product,

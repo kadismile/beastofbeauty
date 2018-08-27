@@ -77,7 +77,7 @@ export const productActions = {
             axios(settings).then((response) => {
                 dispatch(this.fetchProducts(response.data, id))
             }).catch((error) => {
-                console.log("ERROR");
+                console.log(error);
             });
         }
     },

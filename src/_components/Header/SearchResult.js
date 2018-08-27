@@ -9,23 +9,34 @@ class SearchResult extends Component {
 
 
     componentDidMount(){
-
+        window.scroll(0, 0);
+        //this.props.resetProduct();
         setTimeout(() => {
             this.props.onsearchProduct(this.props.searchTerm)
         }, 1500);
 
     }
+    componentWillReceiveProps(nextProps) {
 
+        if(nextProps.match.url !== this.props.match.url) {
+
+            window.scroll(0, 0);
+
+            setTimeout(() => {
+                this.props.onsearchProduct(this.props.searchTerm)
+            }, 1500);
+        }
+
+    }
     addedToCart=(id)=>{
         //alert('this ' + id + ' has been added to the cart')
         this.props.onAddToCart(id)
     };
 
     render(){
-        console.log(this.props.product);
+        console.log(this.props.products.product);
         return(
-            ( this.props.products === undefined || this.props.products.length === 0) ? (loader ) :
-
+            (this.props.products.product.length === 0 ) ? (loader ) :
 
             <div>
                 <section className="main-container col2-left-layout">
@@ -39,12 +50,11 @@ class SearchResult extends Component {
                                     <h6 className="page-heading">
                                      Your Search Results for "<span className="page-heading-title">{this.props.searchTerm}</span>"
                                     </h6>
-
-
                                 </div>
 
 
-                                { (this.props.products.length === 0 ) ? ('<h1> No Record Found </h1>') :
+
+                                { (this.props.products.product.length === 0 ) ? ('No Record Found') :
                                     <article className="col-main">
 
                                         <div className="category-products">

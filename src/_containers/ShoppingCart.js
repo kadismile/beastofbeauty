@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom'
 import PaystackButton from 'react-paystack';
 import {categoryActions} from '../_actions/categoryActions'
 import {cartActions} from "../_actions/cartActions";
-const loader = <div className="data-loading"> <i className="fa fa-refresh fa-spin"></i> </div>
+const loader = <div className="data-loading" style={{marginTop: '100px'}}> <i className="fa fa-refresh fa-spin"></i> <div style={{marginBottom: '500px'}}></div></div>
+
 
 class ShoppingCart extends Component {
     constructor (props) {
@@ -16,6 +17,7 @@ class ShoppingCart extends Component {
         };
     }
     componentDidMount() {
+        window.scroll(0, 0);
         setTimeout(() => this.setState({ loading: false }), 1200); // simulates an async action, and hides the spinner
         $("#minusButton").prop( "disabled", true );
     }
@@ -246,7 +248,7 @@ class ShoppingCart extends Component {
                                                                         let newImages = (data.images)[0];
                                                                         return (
 
-                                                                    <li>
+                                                                    <li key={index}>
                                                                         <figure className="featured-thumb pull-left" style={{marginRight: '8px'}}>
                                                                             <Link to={{ pathname: '/product/'+data.slug}}
                                                                                   className="product-image"
