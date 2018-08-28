@@ -36,7 +36,7 @@ class Home extends Component {
         setTimeout(() => {
             this.props.onFetchProducts();
             this.props.onFetcFeaturedProducts(612);
-            this.props.onFetchBestsellerProducts(917);
+            this.props.onFetchBestsellerProducts(176);
         }, 1000)
     }
 
@@ -74,6 +74,7 @@ class Home extends Component {
     }
     render() {
 
+        console.log(this.props.best_seller)
 
        return(
 
@@ -230,36 +231,62 @@ class Home extends Component {
 
                             <div className="offer-banner"><a href=""><img alt="Banner" src="assets/images/banner-img.png"/></a></div>
 
-                            <div className="product-bestseller">
-                                <div className="product-bestseller-content">
-                                    <div className="product-bestseller-list">
-                                        <div className="tab-container">
+                            <div className="content-page">
 
-                                            <div className="tab-panel active" id="tab-1">
-                                                <div className="category-products">
-                                                    <ul className="products-grid">
 
-                                                        {
-                                                            ( this.props.products === undefined) ? (loader ) :
-                                                                <ProductItem
-                                                                    products={this.props.products.slice(16)} //props of product to child
-                                                                    currency={this.props.currency} //props of currency to child
-                                                                    dispalyProduct={this.dispalyProduct}
-                                                                    addingToCart={this.addedToCart}
-                                                                    cart={this.props.cart}
-                                                                    buttonstate={this.state.buttonState}
-                                                                    //productTitle={this.productTitle.bind(this)} //props for title to child
-                                                                />
+                                <div className="category-product">
+                                    <div className="navbar nav-menu">
+                                        <div className="navbar-collapse">
+                                            <div className="new_title">
+                                                <h2>Best Seller</h2>
+                                            </div>
+                                            <ul className="nav navbar-nav">
+                                                <li className="">
+                                                    <a data-toggle="tab" href="#tab-3" className="active">
+                                                        View All
+                                                    </a>
 
-                                                        }
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                                    </ul>
+
+                                    </div>
+                                    <div className="product-bestseller">
+                                        <div className="product-bestseller-content">
+                                            <div className="product-bestseller-list">
+                                                <div className="tab-container">
+
+                                                    <div className="tab-panel active" id="tab-1">
+                                                        <div className="category-products">
+                                                            <ul className="products-grid">
+
+                                                                {
+                                                                    ( this.props.best_seller === undefined) ? (loader ) :
+                                                                        //document.getElementById('display').style.display = "block";
+                                                                        <ProductItem
+                                                                            products={this.props.best_seller} //props of product to child
+                                                                            currency={this.props.currency} //props of currency to child
+                                                                            dispalyProduct={this.dispalyProduct}
+                                                                            addingToCart={this.addedToCart}
+                                                                            cart={this.props.cart}
+                                                                            buttonstate={this.state.buttonState}
+                                                                            //productTitle={this.productTitle.bind(this)} //props for title to child
+                                                                        />
+
+
+                                                                }
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+
+
                                                 </div>
                                             </div>
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -436,7 +463,7 @@ function mapStateToProps(state) {
     return{
 
         products: state.product.product,
-        beat_seller: state.product.best_seller,
+        best_seller: state.product.best_seller,
         featured_product: state.product.featured_product,
         product_id: state.product.id,
         currency: state.currency,

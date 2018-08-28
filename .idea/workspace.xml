@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed79c74b-87b5-4962-8b78-abe2f073cfb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/jquery.mobile-menu.min.js" afterPath="$PROJECT_DIR$/public/assets/js/jquery.mobile-menu.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_actions/productActions.js" afterPath="$PROJECT_DIR$/src/_actions/productActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Header/Cart.js" afterPath="$PROJECT_DIR$/src/_components/Header/Cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Header/CategoryList.js" afterPath="$PROJECT_DIR$/src/_components/Header/CategoryList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Header/SearchResult.js" afterPath="$PROJECT_DIR$/src/_components/Header/SearchResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/Header.js" afterPath="$PROJECT_DIR$/src/_containers/Header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/Home.js" afterPath="$PROJECT_DIR$/src/_containers/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/MobileHeader.js" afterPath="$PROJECT_DIR$/src/_containers/MobileHeader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/ShoppingCart.js" afterPath="$PROJECT_DIR$/src/_containers/ShoppingCart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/ShowCategoryProduct.js" afterPath="$PROJECT_DIR$/src/_containers/ShowCategoryProduct.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/ShowProducts.js" afterPath="$PROJECT_DIR$/src/_containers/ShowProducts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchResult.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchResult.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_components/Header/SearchResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -109,16 +99,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Measure.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_containers/Measure.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShowProducts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_containers/ShowProducts.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,13 +109,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="productActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_actions/productActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-48">
+              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="456" column="10" lean-forward="true" selection-start-line="454" selection-start-column="8" selection-end-line="456" selection-end-column="10" />
+            <state relative-caret-position="196">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
-                <element signature="e#3685#4504#0" expanded="false" />
+                <element signature="e#3729#4548#0" expanded="false" />
+                <element signature="e#7631#8499#0" expanded="false" />
+                <element signature="e#8536#10821#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>for</find>
       <find>sub</find>
       <find>col-g</find>
       <find>choo</find>
@@ -173,8 +164,9 @@
       <find>230</find>
       <find>loader</find>
       <find>docum</find>
-      <find>rese</find>
       <find>categ</find>
+      <find>rese</find>
+      <find>best</find>
     </findStrings>
     <replaceStrings>
       <replace>colSpan</replace>
@@ -229,15 +221,15 @@
         <option value="$PROJECT_DIR$/public/assets/js/common.js" />
         <option value="$PROJECT_DIR$/public/assets/js/jquery.mobile-menu.min.js" />
         <option value="$PROJECT_DIR$/src/_components/Header/Cart.js" />
-        <option value="$PROJECT_DIR$/src/_actions/productActions.js" />
         <option value="$PROJECT_DIR$/src/_containers/MobileHeader.js" />
         <option value="$PROJECT_DIR$/src/_containers/Header.js" />
         <option value="$PROJECT_DIR$/src/_components/Header/CategoryList.js" />
         <option value="$PROJECT_DIR$/src/_containers/ShowProducts.js" />
         <option value="$PROJECT_DIR$/src/_containers/ShowCategoryProduct.js" />
         <option value="$PROJECT_DIR$/src/_containers/ShoppingCart.js" />
-        <option value="$PROJECT_DIR$/src/_containers/Home.js" />
         <option value="$PROJECT_DIR$/src/_components/Header/SearchResult.js" />
+        <option value="$PROJECT_DIR$/src/_actions/productActions.js" />
+        <option value="$PROJECT_DIR$/src/_containers/Home.js" />
       </list>
     </option>
   </component>
@@ -253,7 +245,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1378" />
@@ -286,6 +278,12 @@
               <item name="beastofbeauty" type="b2602c69:ProjectViewProjectNode" />
               <item name="beastofbeauty" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="beastofbeauty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beastofbeauty" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_actions" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="beastofbeauty" type="b2602c69:ProjectViewProjectNode" />
@@ -358,15 +356,15 @@
       <workItem from="1534187377521" duration="23843000" />
       <workItem from="1534475721970" duration="4531000" />
       <workItem from="1534837019145" duration="54340000" />
-      <workItem from="1535124873958" duration="59159000" />
+      <workItem from="1535124873958" duration="69095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214289000" />
+    <option name="totallyTimeSpent" value="224225000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -376,7 +374,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30807248" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -689,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_actions/productActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_reducers/productReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1267">
@@ -773,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="456" column="10" lean-forward="true" selection-start-line="454" selection-start-column="8" selection-end-line="456" selection-end-column="10" />
-          <folding>
-            <element signature="e#3685#4504#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_components/Header/CategoryItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -819,9 +799,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_components/Header/SearchResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_actions/productActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#3729#4548#0" expanded="false" />
+            <element signature="e#7631#8499#0" expanded="false" />
+            <element signature="e#8536#10821#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
