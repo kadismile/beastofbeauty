@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {authActions} from "./_actions/authActions";
-import { BrowserRouter,Redirect, Route, Switch} from 'react-router-dom'
+import { BrowserRouter,Redirect, Route, Switch, HashRouter} from 'react-router-dom'
+
 import Nomatch from './_components/Nomatch';
 //import {Auth} from './_authentication/Auth'
 import Home from './_containers/Home';
@@ -43,7 +44,7 @@ class App extends Component {
   render() {
       const authenticated  = this.props.auth.isAuthenticated;
     return (
-        <BrowserRouter >
+        <HashRouter >
 
         <div>
             <div id="page">
@@ -104,7 +105,7 @@ class App extends Component {
             <MobileHeader/>
         </div>
 
-        </BrowserRouter>
+        </HashRouter>
     );
   }
 }
