@@ -44,7 +44,7 @@ class App extends Component {
   render() {
       const authenticated  = this.props.auth.isAuthenticated;
     return (
-        <HashRouter >
+        <BrowserRouter >
 
         <div>
             <div id="page">
@@ -105,7 +105,7 @@ class App extends Component {
             <MobileHeader/>
         </div>
 
-        </HashRouter>
+        </BrowserRouter>
     );
   }
 }

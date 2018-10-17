@@ -1,7 +1,10 @@
 import React from 'react'
 
 const ProductPrice = (props)=>{
-    const {price} = props;
+    const {price, regular_price} = props;
+
+
+
 
     let theCurency = props.currency.currency;
     let indexArr = theCurency[props.currency.selected];  // [0] get the value(s) of an index of an array
@@ -26,7 +29,7 @@ const ProductPrice = (props)=>{
                 </p>
                 <p className="special-price"><span
                     className="price-label">Special Price</span>
-                    <span className="price"> {symbol}{formatPrice(price * rate)}  </span>
+                    <span className="price"> {symbol}{formatPrice(regular_price * rate)}  </span>
                 </p>
             </div>
         </div>

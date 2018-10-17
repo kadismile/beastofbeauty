@@ -39,9 +39,11 @@ class ShowProducts extends Component {
 
 
     componentDidMount(){
+
         window.scroll(0, 0); //scroll to the top
         setTimeout(() => {
             this.props.onfetchProductBySlug(this.props.match.params.product_name); //fetch product by slug
+            //this.props.onfetchProductBySlug('women'); //fetch product by slug
             document.getElementById('display').style.display = "none";
         }, 1500);
     }
@@ -59,6 +61,7 @@ class ShowProducts extends Component {
     };
 
     componentWillReceiveProps(nextProps) {
+
         let slug;
         if(nextProps.match.url !== this.props.match.url  ) {
             window.scroll(0, 0);
@@ -73,6 +76,14 @@ class ShowProducts extends Component {
 
 
     render() {
+
+        let theCurency = this.props.currency.currency;
+        let indexArr = theCurency[this.props.currency.selected];  // [0] get the value(s) of an index of an array
+        let rate = (indexArr.rate);
+        let symbol = (indexArr.symbol);
+
+        console.log(symbol + 'curency...')
+
 
         let product, myimages;
         _.map(this.props.products, (data) =>{
@@ -129,8 +140,8 @@ class ShowProducts extends Component {
                                                 <h1 style={{fontSize: '20px'}}>{product.name}</h1>
                                                 <div className="price-block">
                                                     <div className="price-box">
-                                                        <p className="old-price"> <span className="price-label">Regular Price:</span> <span className="price"> $315.99 </span> </p>
-                                                        <p className="special-price"> <span className="price-label">Special Price</span> <span className="price"> ${formatNumber(product.regular_price) } </span> </p>
+                                                        <p className="old-price"> <span className="price-label">Regular Price:</span> <span className="price"> {symbol}{formatPrice(product.regular_price) } </span> </p>
+                                                        <p className="special-price"> <span className="price-label">Special Price</span> <span className="price"> {symbol}{formatPrice(product.sale_price) } </span> </p>
 
                                                     </div>
 
@@ -915,11 +926,23 @@ function matchDispatchToProps(dispatch){
     }
 }
 
-function formatNumber (val) {
-    if(_.isString(val)){
-        return val
-    }else if(_.isUndefined(val)) {
-        return ''
+
+
+function formatPrice (val) {
+    if(val !== ""){
+        return val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+        /* return  Math.round(val)*/
+    }else  {
+        return '--'
+    }
+}
+
+function formatPrice (val) {
+    if(val !== ""){
+        return val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+        /* return  Math.round(val)*/
+    }else  {
+        return '--'
     }
 }
 

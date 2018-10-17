@@ -203,10 +203,20 @@ class Header extends Component {
                                <div className="features-block">
                                    <div className="col-lg-9 col-md-9 col-xs-12 col-sm-9 offer-block">
                                        <Link to={{pathname: "/"}} > Home </Link>
-                                       <a href="/category/hats">Clothes</a>
-                                       <a href="/category/hats">Bags</a>
-                                       <a href="complains.php">Headwraps</a>
+                                       <Link
+                                           to={{pathname: `/category/women`, state: { id: 819, name:'women'}}} >
+                                           Women
+                                       </Link>
+                                       <Link
+                                           to={{pathname: `/category/men`, state: { id: 820, name:'men'}}} >
+                                           Men
+                                       </Link>
+                                       <Link
+                                           to={{pathname: `/category/children`, state: { id: 821, name:'children'}}} >
+                                           Children
+                                       </Link>
                                        <Link to={{pathname: "/shopping_cart"}} > View Cart</Link>
+
                                        {/*<Link style={{backgroundColor: '#883912'}} to={{pathname: "/measure-me"}} >Measure Me</Link>*/}
 
                                        <span>Order online or call us (+234) 070 678 5047</span>

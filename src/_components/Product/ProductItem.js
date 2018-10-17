@@ -43,7 +43,7 @@ const ProductItem = (props)=> {
 
                                     <ProductPrice
                                         price={product.price}
-                                        sale_price={product.sale_price}
+                                        regular_price={product.regular_price}
                                         currency={currency}
                                         selected={selected}
                                     />
