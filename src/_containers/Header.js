@@ -219,7 +219,7 @@ class Header extends Component {
 
                                        {/*<Link style={{backgroundColor: '#883912'}} to={{pathname: "/measure-me"}} >Measure Me</Link>*/}
 
-                                       <span>Order online or call us (+234) 070 678 5047</span>
+                                       <span>Order online or call us (+234) 080 8287 2859</span>
                                    </div>
                                </div>
                            </div>

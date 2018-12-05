@@ -54,7 +54,7 @@ const Footer = () =>{
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-xs-12 coppyright">
-                                © 2018 the Ankarea Hub. All Rights Reserved.
+                                © 2018 the Beast Of Beauty. All Rights Reserved.
                             </div>
                         </div>
                     </div>
