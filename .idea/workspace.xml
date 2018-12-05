@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed79c74b-87b5-4962-8b78-abe2f073cfb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Footer.js" afterPath="$PROJECT_DIR$/src/_components/Footer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Product/ProductPrice.js" afterPath="$PROJECT_DIR$/src/_components/Product/ProductPrice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/Header.js" afterPath="$PROJECT_DIR$/src/_containers/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/ShowProducts.js" afterPath="$PROJECT_DIR$/src/_containers/ShowProducts.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,26 +18,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShowProducts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShowProducts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_containers/ShowProducts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13154">
-              <caret line="934" column="12" lean-forward="true" selection-start-line="934" selection-start-column="12" selection-end-line="934" selection-end-column="12" />
+            <state relative-caret-position="355">
+              <caret line="882" column="0" lean-forward="true" selection-start-line="240" selection-start-column="49" selection-end-line="882" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#2382#2428#0" expanded="false" />
                 <element signature="e#2453#2568#0" expanded="false" />
                 <element signature="e#2604#2658#0" expanded="false" />
+                <element signature="e#11400#12375#0" expanded="false" />
+                <element signature="e#12419#77097#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductPrice.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductPrice.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_components/Product/ProductPrice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+            <state relative-caret-position="442">
+              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -82,8 +83,8 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="107">
+              <caret line="305" column="69" lean-forward="false" selection-start-line="305" selection-start-column="69" selection-end-line="305" selection-end-column="69" />
               <folding>
                 <element signature="e#3729#4548#0" expanded="false" />
                 <element signature="e#7631#8499#0" expanded="false" />
@@ -91,6 +92,16 @@
                 <element signature="n#!!block;n#mapStateToProps#0" expanded="false" />
                 <element signature="n#!!block;n#matchDispatchToProps#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_components/Product/ProductItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,11 +228,11 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/_components/Product/ProductItem.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/_containers/ShowProducts.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/default" />
         <option value="$PROJECT_DIR$/src/_containers/Header.js" />
         <option value="$PROJECT_DIR$/src/_components/Footer.js" />
         <option value="$PROJECT_DIR$/src/_components/Product/ProductPrice.js" />
+        <option value="$PROJECT_DIR$/src/_containers/ShowProducts.js" />
       </list>
     </option>
   </component>
@@ -355,12 +366,12 @@
       <workItem from="1540211753248" duration="1838000" />
       <workItem from="1540241826429" duration="24000" />
       <workItem from="1542285623084" duration="1991000" />
-      <workItem from="1544030978094" duration="2114000" />
+      <workItem from="1544030978094" duration="3116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328710000" />
+    <option name="totallyTimeSpent" value="329712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -374,7 +385,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22734761" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4250412" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -669,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_components/Product/ProductItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="38" lean-forward="false" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -703,20 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#3729#4548#0" expanded="false" />
-            <element signature="e#7631#8499#0" expanded="false" />
-            <element signature="e#8536#10821#0" expanded="false" />
-            <element signature="n#!!block;n#mapStateToProps#0" expanded="false" />
-            <element signature="n#!!block;n#matchDispatchToProps#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,24 +763,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_containers/ShowProducts.js">
+    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13154">
-          <caret line="934" column="12" lean-forward="true" selection-start-line="934" selection-start-column="12" selection-end-line="934" selection-end-column="12" />
+        <state relative-caret-position="107">
+          <caret line="305" column="69" lean-forward="false" selection-start-line="305" selection-start-column="69" selection-end-line="305" selection-end-column="69" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#2382#2428#0" expanded="false" />
-            <element signature="e#2453#2568#0" expanded="false" />
-            <element signature="e#2604#2658#0" expanded="false" />
+            <element signature="e#3729#4548#0" expanded="false" />
+            <element signature="e#7631#8499#0" expanded="false" />
+            <element signature="e#8536#10821#0" expanded="false" />
+            <element signature="n#!!block;n#mapStateToProps#0" expanded="false" />
+            <element signature="n#!!block;n#matchDispatchToProps#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_components/Product/ProductItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_components/Product/ProductPrice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+        <state relative-caret-position="442">
+          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_containers/ShowProducts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="882" column="0" lean-forward="true" selection-start-line="240" selection-start-column="49" selection-end-line="882" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#2382#2428#0" expanded="false" />
+            <element signature="e#2453#2568#0" expanded="false" />
+            <element signature="e#2604#2658#0" expanded="false" />
+            <element signature="e#11400#12375#0" expanded="false" />
+            <element signature="e#12419#77097#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

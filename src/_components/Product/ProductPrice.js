@@ -25,11 +25,11 @@ const ProductPrice = (props)=>{
                 <p className="old-price"><span
                     className="price-label">Regular Price:</span>
                     <span
-                        className="price">{symbol}{formatPrice(regular_price * rate) } </span>
+                        className="price">{symbol}{formatPrice(regular_price  * rate) } </span>
                 </p>
                 <p className="special-price"><span
                     className="price-label">Special Price</span>
-                    <span className="price"> {symbol}{formatPrice(price * rate)}  </span>
+                    <span className="price"> {symbol}{formatPrice(price  * rate)}  </span>
                 </p>
             </div>
         </div>

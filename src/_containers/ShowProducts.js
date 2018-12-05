@@ -201,7 +201,7 @@ class ShowProducts extends Component {
 
                                             <div className="short-description">
                                                 <h2>Quick Overview</h2>
-                                                <p>{striptags(product.short_description)}</p>
+                                                <p>{striptags(product.description)}</p>
                                             </div>
 
 
@@ -212,7 +212,7 @@ class ShowProducts extends Component {
 
 
                                                 <div className="social">
-                                                <ul>
+                                               {/* <ul>
                                                     <li className="fb"><a href="">.</a></li>
                                                     <li className="tw"><a href="">.</a></li>
                                                     <li className="googleplus"><a href="">.</a></li>
@@ -220,13 +220,13 @@ class ShowProducts extends Component {
                                                     <li className="pintrest"><a href="">.</a></li>
                                                     <li className="linkedin"><a href="">.</a></li>
                                                     <li className="youtube"><a href="">.</a></li>
-                                                </ul>
+                                                </ul>*/}
                                             </div>
                                         </div>
 
                                     </div>
                                     <div className="product-collateral">
-                                        <div className="col-sm-12 wow bounceInUp animated">
+                                       {/* <div className="col-sm-12 wow bounceInUp animated">
                                             <ul id="product-detail-tab" className="nav nav-tabs product-tabs">
                                                 <li className="active"> <a href="#product_tabs_description" data-toggle="tab"> Product Description </a> </li>
                                             </ul>
@@ -238,7 +238,7 @@ class ShowProducts extends Component {
                                                 </div>
 
                                             </div>
-                                        </div>
+                                        </div>*/}
 
                                         {/* <div className="col-sm-12">
                                             <div className="box-additional">
