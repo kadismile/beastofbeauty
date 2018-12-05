@@ -937,13 +937,13 @@ function formatPrice (val) {
     }
 }
 
-function formatPrice (val) {
+/*function formatPrice (val) {
     if(val !== ""){
         return val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-        /* return  Math.round(val)*/
+        /!* return  Math.round(val)*!/
     }else  {
         return '--'
     }
-}
+}*/
 
 export default connect(mapStateToProps, matchDispatchToProps)(ShowProducts);
