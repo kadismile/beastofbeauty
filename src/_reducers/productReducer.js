@@ -6,6 +6,8 @@ const initialState = {
     id: 0,
     searchTerm: '',
     best_seller:[],
+    children:[],
+    channnel:[],
     featured_product:[],
     slugTerm:'',
     cartProducts:[]
@@ -70,6 +72,27 @@ export default function todoReducer(state = initialState, action){
             return {
                 ...state,
                 best_seller: action.products,
+                id: action.id,
+
+            }
+        }
+
+        case type.CHILDREN:
+        {
+            return {
+                ...state,
+                children: action.products,
+                id: action.id,
+
+            }
+        }
+
+
+        case type.CHANNNEL:
+        {
+            return {
+                ...state,
+                channnel: action.products,
                 id: action.id,
 
             }

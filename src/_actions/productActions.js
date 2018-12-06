@@ -34,6 +34,23 @@ export const productActions = {
         }
     },
 
+    fetchChildren(products, id){
+        return {
+            type: type.CHILDREN,
+            products,
+            id
+        }
+    },
+
+    fetchChannnel(products, id){
+        return {
+            type: type.CHANNNEL,
+            products,
+            id
+        }
+    },
+
+
     fetchFeaturedProducts(products, id){
         return {
             type: type.FEATURED_PRODUCT,
@@ -158,6 +175,50 @@ export const productActions = {
             });
         }
     },
+
+
+
+    ChildrenProductCategory(id){
+
+        return dispatch  => {
+            let settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products?category=${id}&&per_page=20`,
+                "method": "GET",
+                "headers": {
+                    "authorization": authorize.authorization
+                }
+            };
+            axios(settings).then((response) => {
+                dispatch(this.fetchChildren(response.data, id))
+            }).catch((error) => {
+                console.log("ERROR");
+            });
+        }
+    },
+
+    ChannnelProductCategory(id){
+
+        return dispatch  => {
+            let settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": `${authorize.apiUrl}/wp-json/wc/v2/products?category=${id}&&per_page=20`,
+                "method": "GET",
+                "headers": {
+                    "authorization": authorize.authorization
+                }
+            };
+            axios(settings).then((response) => {
+                dispatch(this.fetchChannnel(response.data, id))
+            }).catch((error) => {
+                console.log("ERROR");
+            });
+        }
+    },
+
+
     FeatureProductCategory(id){
 
         return dispatch  => {

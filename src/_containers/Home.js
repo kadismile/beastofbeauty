@@ -35,8 +35,10 @@ class Home extends Component {
         $("#addToCart").hide();
         setTimeout(() => {
             this.props.onFetchProducts();
-            this.props.onFetcFeaturedProducts(612);
+            this.props.onFetchFeaturedProducts(612);
             this.props.onFetchBestsellerProducts(176);
+            this.props.onFetchChildren(821);
+            this.props.onFetchChannnel(837);
         }, 1000)
     }
 
@@ -74,7 +76,7 @@ class Home extends Component {
     }
     render() {
 
-        console.log(this.props.best_seller)
+        console.log(this.props.channnel);
 
        return(
 
@@ -140,17 +142,15 @@ class Home extends Component {
                         <div className="col-sm-9 col-sm-push-3">
                             <div style={{overflow: 'hidden'}}>
                                 <div className="figure banner-with-effects effect-sadie1 banner-width  with-button"
-                                     style={{backgroundColor: '#ffffff'}}><img src="assets/images/watch.jpg" alt=""/>
+                                     style={{backgroundColor: '#ffffff'}}><img src="assets/images/bag-banner.png" alt=""/>
                                     <div className="figcaption">
                                         <div className="banner-content left top"><span style={{
                                             color: '#cccccc',
                                             fontSize: '12px',
                                             letterSpacing: '1px',
                                             fontWeight: 600
-                                        }}>DIGITAL LIFE</span><br/>
-                                            <span style={{fontSize: '24px', color: '#ffffff'}}>Slim, smart and <br
-                                                style={{color: '#ffffff', fontSize: '24px'}}/>
-                  beautiful</span></div>
+                                        }}>ORIGINAL PRODUCTS</span><br/><span style={{fontSize: '24px', color: '#ffffff'}}>Slim, smart and <br
+                                                style={{color: '#ffffff', fontSize: '24px'}}/>beautiful</span></div>
                                     </div>
                                     <a href="" style={{color: '#00aeef'}} className="left bottom btn_type_1"
                                        rel="nofollow">Read more</a></div>
@@ -159,13 +159,13 @@ class Home extends Component {
                                                                                alt=""/>
                                     <div className="figcaption">
                                         <div className="banner-content left top"><b><span
-                                            style={{color: '#444444', fontSize: '12px', letterSpacing: '1px'}}>TODAYS OFFER</span></b><br/>
+                                            style={{color: '#444444', fontSize: '12px', letterSpacing: '1px'}}>COMMING SOON</span></b><br/>
                                             <span style={{color: '#000000', fontSize: '24px', paddingTop: '5px'}}>Men's shoes <br
                                                 style={{color: '#000000', fontSize: 24 + 'px'}}/>
                   collection</span></div>
                                     </div>
                                     <a href="" style={{color: '#00aeef'}} className="left bottom btn_type_1"
-                                       rel="nofollow">Read more</a></div>
+                                       rel="nofollow">read more</a></div>
                             </div>
                             <div className="content-page">
 
@@ -229,7 +229,7 @@ class Home extends Component {
                             </div>
 
 
-                            <div className="offer-banner"><a href=""><img alt="Banner" src="assets/images/banner-img.png"/></a></div>
+                            <div className="offer-banner"><a href="/category/children"><img alt="Banner" src="assets/images/children-banner.jpg"/></a></div>
 
                             <div className="content-page">
 
@@ -238,11 +238,11 @@ class Home extends Component {
                                     <div className="navbar nav-menu">
                                         <div className="navbar-collapse">
                                             <div className="new_title">
-                                                <h2>Best Seller</h2>
+                                                <h2>Children</h2>
                                             </div>
                                             <ul className="nav navbar-nav">
                                                 <li className="">
-                                                    <a data-toggle="tab" href="#tab-3" className="active">
+                                                    <a data-toggle="tab" href="/category/children" className="active">
                                                         View All
                                                     </a>
 
@@ -262,10 +262,10 @@ class Home extends Component {
                                                             <ul className="products-grid">
 
                                                                 {
-                                                                    ( this.props.best_seller === undefined) ? (loader ) :
+                                                                    ( this.props.children === undefined) ? (loader ) :
                                                                         //document.getElementById('display').style.display = "block";
                                                                         <ProductItem
-                                                                            products={this.props.best_seller} //props of product to child
+                                                                            products={this.props.children.slice(7)} //props of product to child
                                                                             currency={this.props.currency} //props of currency to child
                                                                             dispalyProduct={this.dispalyProduct}
                                                                             addingToCart={this.addedToCart}
@@ -292,36 +292,62 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            <div className="product-bestseller">
-                                <div className="product-bestseller-content">
-                                    <div className="product-bestseller-list">
-                                        <div className="tab-container">
+                            <div className="content-page">
 
-                                            <div className="tab-panel active" id="tab-1">
-                                                <div className="category-products">
-                                                    <ul className="products-grid">
 
-                                                        {
-                                                            ( this.props.products === undefined) ? (loader ) :
-                                                                <ProductItem
-                                                                    products={this.props.products.slice(16)} //props of product to child
-                                                                    currency={this.props.currency} //props of currency to child
-                                                                    dispalyProduct={this.dispalyProduct}
-                                                                    addingToCart={this.addedToCart}
-                                                                    cart={this.props.cart}
-                                                                    buttonstate={this.state.buttonState}
-                                                                    //productTitle={this.productTitle.bind(this)} //props for title to child
-                                                                />
+                                <div className="category-product">
+                                    <div className="navbar nav-menu">
+                                        <div className="navbar-collapse">
+                                            <div className="new_title">
+                                                <h2>Channel</h2>
+                                            </div>
+                                            <ul className="nav navbar-nav">
+                                                <li className="">
+                                                    <a data-toggle="tab" href="/category/channel" className="active">
+                                                        View All
+                                                    </a>
 
-                                                        }
+                                                </li>
+                                            </ul>
+                                        </div>
 
-                                                    </ul>
+
+                                    </div>
+                                    <div className="product-bestseller">
+                                        <div className="product-bestseller-content">
+                                            <div className="product-bestseller-list">
+                                                <div className="tab-container">
+
+                                                    <div className="tab-panel active" id="tab-1">
+                                                        <div className="category-products">
+                                                            <ul className="products-grid">
+
+                                                                {
+                                                                    ( this.props.channnel === undefined) ? (loader ) :
+                                                                        //document.getElementById('display').style.display = "block";
+                                                                        <ProductItem
+                                                                            products={this.props.channnel} //props of product to child
+                                                                            currency={this.props.currency} //props of currency to child
+                                                                            dispalyProduct={this.dispalyProduct}
+                                                                            addingToCart={this.addedToCart}
+                                                                            cart={this.props.cart}
+                                                                            buttonstate={this.state.buttonState}
+                                                                            //productTitle={this.productTitle.bind(this)} //props for title to child
+                                                                        />
+
+
+                                                                }
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+
+
                                                 </div>
                                             </div>
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -341,7 +367,7 @@ class Home extends Component {
 
                                 </div>*/}
                             </div>
-                            <div className="hot-deal">
+                          {/*  <div className="hot-deal">
                                 <ul className="products-grid">
                                     <li className="right-space two-height item">
                                         <div className="item-inner">
@@ -398,7 +424,7 @@ class Home extends Component {
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>*/}
 
 
 
@@ -464,6 +490,8 @@ function mapStateToProps(state) {
 
         products: state.product.product,
         best_seller: state.product.best_seller,
+        children: state.product.children,
+        channnel: state.product.channnel,
         featured_product: state.product.featured_product,
         product_id: state.product.id,
         currency: state.currency,
@@ -495,7 +523,15 @@ function matchDispatchToProps(dispatch){
             dispatch(productActions.BestsellerProductCategory(id));
         },
 
-        onFetcFeaturedProducts(id){
+        onFetchChildren(id){
+            dispatch(productActions.ChildrenProductCategory(id));
+        },
+
+        onFetchChannnel(id){
+            dispatch(productActions.ChannnelProductCategory(id));
+        },
+
+        onFetchFeaturedProducts(id){
             dispatch(productActions.FeatureProductCategory(id));
         },
 
