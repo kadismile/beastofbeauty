@@ -364,7 +364,7 @@ class Header extends Component {
                                            <input type="text"
                                                   onChange={(event) => this.props.onsearchTermChanged(event.target.value)}
                                                   className="form-control simple"
-                                                  placeholder="Search  here...ooooo"
+                                                  placeholder="Search here..."
                                                   value={this.props.searchTerm}
                                                   style={{
                                                       height: '31px',
@@ -375,7 +375,9 @@ class Header extends Component {
                                                <button className="btn btn-default" type="submit"><i className="fa fa-search"></i> </button>
                                            </div>
                                        </div>
+                                       <span style={{textAlign: "center", fontSize: '11px', paddingLeft: '20px'}}>Order online or call us (+234) 080 8287 2859</span>
                                    </form>
+
                                </div>
 
                            </div>
@@ -425,7 +427,7 @@ class Header extends Component {
                                        <Link to={{pathname: "/shopping_cart"}} > View Cart</Link>
                                        {/*<Link style={{backgroundColor: '#883912'}} to={{pathname: "/measure-me"}} >Measure Me</Link>*/}
 
-                                       <span>Order online or call us (+234) 070 678 5047</span>
+                                       <span>Order online or call us (+234) 080 8287 2859</span>
                                    </div>
                                </div>
                            </div>

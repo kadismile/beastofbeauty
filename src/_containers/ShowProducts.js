@@ -44,6 +44,7 @@ class ShowProducts extends Component {
         setTimeout(() => {
             this.props.onfetchProductBySlug(this.props.match.params.product_name); //fetch product by slug
             //this.props.onfetchProductBySlug('women'); //fetch product by slug
+            let theDisplay = document.getElementById('display');
             document.getElementById('display').style.display = "none";
         }, 1500);
     }
