@@ -260,7 +260,14 @@ class Home extends Component {
                             </div>
 
 
-                            <div className="offer-banner"><a href="/category/children"><img alt="Banner" src="assets/images/children-banner.jpg"/></a></div>
+                            <div className="offer-banner">
+                                <Link
+                                    to={{pathname: `/category/children`,
+                                        state: { id: 821, name:'children'}
+                                    }} >
+                                    <img alt="Banner" src="assets/images/children-banner.jpg"/>
+                                </Link>
+                            </div>
 
                             <div className="content-page">
 
@@ -273,9 +280,15 @@ class Home extends Component {
                                             </div>
                                             <ul className="nav navbar-nav">
                                                 <li className="">
-                                                    <a data-toggle="tab" href="/category/children" className="active">
+                                                    <Link
+                                                        to={{pathname: `/category/children`,
+                                                            state: { id: 821, name:'children'}
+                                                        }} >
                                                         View All
-                                                    </a>
+                                                    </Link>
+                                                    {/*<a data-toggle="tab" href="/category/children" className="active">
+
+                                                    </a>*/}
 
                                                 </li>
                                             </ul>

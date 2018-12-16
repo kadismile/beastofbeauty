@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed79c74b-87b5-4962-8b78-abe2f073cfb3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_components/Header/Cart.js" afterPath="$PROJECT_DIR$/src/_components/Header/Cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/Header.js" afterPath="$PROJECT_DIR$/src/_containers/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/ShoppingCart.js" afterPath="$PROJECT_DIR$/src/_containers/ShoppingCart.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -113,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingCart.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShoppingCart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_containers/ShoppingCart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
@@ -129,7 +126,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>product-</find>
       <find>onfetchProductBySlug</find>
       <find>ero</find>
       <find>v3</find>
@@ -159,6 +155,7 @@
       <find>logi</find>
       <find>round</find>
       <find>roundUp</find>
+      <find>unit</find>
     </findStrings>
     <replaceStrings>
       <replace>colSpan</replace>
@@ -354,12 +351,12 @@
       <workItem from="1544030978094" duration="12096000" />
       <workItem from="1544679743810" duration="1378000" />
       <workItem from="1544707468395" duration="716000" />
-      <workItem from="1544940557062" duration="19634000" />
+      <workItem from="1544940557062" duration="19803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360420000" />
+    <option name="totallyTimeSpent" value="360589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -714,19 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="113" column="90" lean-forward="false" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#9505#10373#0" expanded="false" />
-            <element signature="e#10410#12695#0" expanded="false" />
-            <element signature="e#20555#25250#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_containers/ShowCategoryProduct.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -777,6 +761,19 @@
           <caret line="158" column="102" lean-forward="true" selection-start-line="158" selection-start-column="102" selection-end-line="158" selection-end-column="102" />
           <folding>
             <element signature="n#!!block;n#formatPrice#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="113" column="90" lean-forward="false" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#9505#10373#0" expanded="false" />
+            <element signature="e#10410#12695#0" expanded="false" />
+            <element signature="e#20555#25250#0" expanded="false" />
           </folding>
         </state>
       </provider>
