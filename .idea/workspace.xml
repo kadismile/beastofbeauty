@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed79c74b-87b5-4962-8b78-abe2f073cfb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/xmas-promo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/xmas-promo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/xmas-promo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/xmas-promo2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_containers/Home.js" afterPath="$PROJECT_DIR$/src/_containers/Home.js" />
     </list>
@@ -24,14 +20,13 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="74">
+              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#3002#3878#0" expanded="false" />
-                <element signature="e#8491#9359#0" expanded="false" />
-                <element signature="e#9396#11681#0" expanded="false" />
-                <element signature="e#19541#24236#0" expanded="false" />
+                <element signature="e#8485#9353#0" expanded="false" />
+                <element signature="e#9390#11675#0" expanded="false" />
+                <element signature="e#19535#24230#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -384,12 +379,12 @@
       <workItem from="1544030978094" duration="12096000" />
       <workItem from="1544679743810" duration="1378000" />
       <workItem from="1544707468395" duration="716000" />
-      <workItem from="1544940557062" duration="7129000" />
+      <workItem from="1544940557062" duration="7821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347915000" />
+    <option name="totallyTimeSpent" value="348607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -792,14 +787,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_containers/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="74">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#3002#3878#0" expanded="false" />
-            <element signature="e#8491#9359#0" expanded="false" />
-            <element signature="e#9396#11681#0" expanded="false" />
-            <element signature="e#19541#24236#0" expanded="false" />
+            <element signature="e#8485#9353#0" expanded="false" />
+            <element signature="e#9390#11675#0" expanded="false" />
+            <element signature="e#19535#24230#0" expanded="false" />
           </folding>
         </state>
       </provider>
