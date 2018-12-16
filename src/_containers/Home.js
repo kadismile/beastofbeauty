@@ -5,7 +5,8 @@ import {categoryActions} from '../_actions/categoryActions'
 import {productActions} from '../_actions/productActions'
 import {cartActions} from '../_actions/cartActions'
 import ProductItem from '../_components/Product/ProductItem'
-import RevSlider, { Slide} from 'react-rev-slider';
+import RevSlider, { Slide, Caption} from 'react-rev-slider';
+import {Link} from 'react-router-dom'
 
 
 
@@ -95,8 +96,26 @@ class Home extends Component {
 
                                         <RevSlider >
 
+
+                                              {/*  <Slide
+                                                    src="assets/images/xmas-promo.png"
+                                                    alt="slidebg1"
+                                                    data-bgfit="cover"
+                                                    data-bgposition="left top"
+                                                    data-bgrepeat="no-repeat"
+                                                    slideProperties={{
+                                                        'data-transition': "random",
+                                                        'data-slotamount': "7",
+                                                        'data-masterspeed': "1000"
+                                                    }}
+                                                >
+
+                                                </Slide>*/}
+
+
+
                                             <Slide
-                                                src="assets/images/slide-img2.jpg"
+                                                src="assets/images/xmas-promo2.png"
                                                 alt="slidebg1"
                                                 data-bgfit="cover"
                                                 data-bgposition="left top"
@@ -107,21 +126,16 @@ class Home extends Component {
                                                     'data-masterspeed': "1000"
                                                 }}
                                             >
-
-                                            </Slide>
-                                            <Slide
-                                                src="assets/images/slider5.jpg"
-                                                alt="slidebg1"
-                                                data-bgfit="cover"
-                                                data-bgposition="left top"
-                                                data-bgrepeat="no-repeat"
-                                                slideProperties={{
-                                                    'data-transition': "random",
-                                                    'data-slotamount': "7",
-                                                    'data-masterspeed': "1000"
-                                                }}
-                                            >
-
+                                                <Caption
+                                                    class="tp-caption skewfromrightshort fadeout"
+                                                    data-x="185"
+                                                    data-y="224"
+                                                    data-speed="500"
+                                                    data-start="1200"
+                                                    data-easing="Power4.easeOut"
+                                                >
+                                                    <p style={{color:'red'}}>This is a caption</p>
+                                                </Caption>
                                             </Slide>
 
 
