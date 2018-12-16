@@ -97,7 +97,7 @@ class Home extends Component {
                                         <RevSlider >
 
 
-                                              {/*  <Slide
+                                                <Slide
                                                     src="assets/images/xmas-promo.png"
                                                     alt="slidebg1"
                                                     data-bgfit="cover"
@@ -110,7 +110,7 @@ class Home extends Component {
                                                     }}
                                                 >
 
-                                                </Slide>*/}
+                                                </Slide>
 
 
 
