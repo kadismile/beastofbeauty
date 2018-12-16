@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import {authActions} from "./_actions/authActions";
-import { BrowserRouter,Redirect, Route, Switch, HashRouter} from 'react-router-dom'
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom'
 
 import Nomatch from './_components/Nomatch';
 //import {Auth} from './_authentication/Auth'
@@ -33,58 +33,55 @@ class App extends Component {
     }*/
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.auth.id !== this.props.auth.id) {
-                setTimeout(() => {
-                    this.props.onLogoOut(nextProps.auth.id)
-                }, 60000)
+        if (nextProps.auth.id !== this.props.auth.id) {
+            setTimeout(() => {
+                this.props.onLogoOut(nextProps.auth.id)
+            }, 60000)
 
         }
     }
 
-  render() {
-      const authenticated  = this.props.auth.isAuthenticated;
-    return (
-        <BrowserRouter >
+    render() {
+        const authenticated = this.props.auth.isAuthenticated;
+        return (
+            <BrowserRouter>
 
-        <div>
-            <div id="page">
+                <div>
+                    <div id="page">
 
-                <Route render={(props) => <Header {...props}/> }/>
-                <Switch>
-                    <Route path="/" exact render={(props) => <Home  {...props}/> }/>
-                    <Route path="/category/:cat_name" exact render={(props) => <ShowCategoryProduct {...props}/> } />
-                    <Route path="/search/:search_parameter" render={(props) => <SearchResult {...props}/> } />
-                    <Route path="/product/:product_name" render={(props) => <ListResource {...props}/> } />
-                    <Route path="/shopping_cart" render={(props) => <ShoppingCart {...props}/> } />
-                    <Route path="/login" render={(props) => <Login {...props}/> } />
-                    <Route path="/register" render={(props) => <Register {...props}/> } />
-                    <Route path="/forgot-password" render={(props) => <ForgotPassword {...props}/> } />
-                    <Route path="/checkout" render={(props) => <CheckOut {...props}/> } />
-                    {/*<Route path="/my-account" render={(props) => <Dashboard {...props}/> } />*/}
-
-
-                    <Route path="/my-account" render={(props) => (
-                        authenticated
-                            ? <Dashboard {...props} />
-                            : <Redirect to='/login' />
-                        )}
-                    />
-
-                    <Route path="/account-info" render={(props) => (
-                        authenticated
-                            ? <Accountinfo {...props} />
-                            : <Redirect to='/login' />
-                    )}
-                    />
+                        <Route render={(props) => <Header {...props}/>}/>
+                        <Switch>
+                            <Route path="/" exact render={(props) => <Home  {...props}/>}/>
+                            <Route path="/category/:cat_name" exact
+                                   render={(props) => <ShowCategoryProduct {...props}/>}/>
+                            <Route path="/search/:search_parameter" render={(props) => <SearchResult {...props}/>}/>
+                            <Route path="/product/:product_name" render={(props) => <ListResource {...props}/>}/>
+                            <Route path="/shopping_cart" render={(props) => <ShoppingCart {...props}/>}/>
+                            <Route path="/login" render={(props) => <Login {...props}/>}/>
+                            <Route path="/register" render={(props) => <Register {...props}/>}/>
+                            <Route path="/forgot-password" render={(props) => <ForgotPassword {...props}/>}/>
+                            <Route path="/checkout" render={(props) => <CheckOut {...props}/>}/>
+                            {/*<Route path="/my-account" render={(props) => <Dashboard {...props}/> } />*/}
 
 
+                            <Route path="/my-account" render={(props) => (
+                                authenticated
+                                    ? <Dashboard {...props} />
+                                    : <Redirect to='/login'/>
+                            )}
+                            />
+
+                            <Route path="/account-info" render={(props) => (
+                                authenticated
+                                    ? <Accountinfo {...props} />
+                                    : <Redirect to='/login'/>
+                            )}
+                            />
 
 
+                            <Route path="/measure-me" render={(props) => <Measure {...props}/>}/>
 
-
-                    <Route path="/measure-me" render={(props) => <Measure {...props}/> } />
-
-                    {/*<Route path="/category/:cat_name/:number" render={(props) => <ShowCategory {...props}/> } />
+                            {/*<Route path="/category/:cat_name/:number" render={(props) => <ShowCategory {...props}/> } />
 
 
                     <Route path="/category/all" render={(props) => <Category {...props}/> } />
@@ -94,32 +91,30 @@ class App extends Component {
                     <Route path="/product/:slug" render={(props) => <ProductDetails {...props}/> } />*/}
 
 
+                            <Route path='*' component={Nomatch}/>
 
+                        </Switch>
 
-                    <Route path='*' component={Nomatch} />
+                        <Footer/>
+                    </div>
+                    <MobileHeader/>
+                </div>
 
-                </Switch>
-
-                <Footer/>
-            </div>
-            <MobileHeader/>
-        </div>
-
-        </BrowserRouter>
-    );
-  }
+            </BrowserRouter>
+        );
+    }
 }
 
 function mapStateToProps(state) {
-    return{
+    return {
         auth: state.auth
     }
 }
 
-function matchDispatchToProps(dispatch){
+function matchDispatchToProps(dispatch) {
     return {
 
-        onLogoOut(id){
+        onLogoOut(id) {
             dispatch(authActions.logoOut(id))
         }
 

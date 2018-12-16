@@ -6,7 +6,7 @@ import {productActions} from '../_actions/productActions'
 import {cartActions} from '../_actions/cartActions'
 import ProductItem from '../_components/Product/ProductItem'
 import RevSlider, { Slide, Caption} from 'react-rev-slider';
-import {Link} from 'react-router-dom'
+
 
 
 
@@ -100,15 +100,32 @@ class Home extends Component {
                                                 <Slide
                                                     src="assets/images/xmas-promo.png"
                                                     alt="slidebg1"
+                                                    href="/salim"
                                                     data-bgfit="cover"
                                                     data-bgposition="left top"
                                                     data-bgrepeat="no-repeat"
                                                     slideProperties={{
                                                         'data-transition': "random",
                                                         'data-slotamount': "7",
-                                                        'data-masterspeed': "1000"
+                                                        'data-masterspeed': "1000",
+                                                        onClick: (e) => {
+                                                            e.stopPropagation()
+                                                            this.props.history.push({
+                                                                pathname: "/category/children",
+                                                                state: {id: 821, name: 'children'}
+                                                            });
+                                                        }
                                                     }}
                                                 >
+
+
+                                                    <Caption
+                                                        class="tp-caption skewfromrightshort fadeout"
+
+                                                        data-speed="500"
+                                                        data-start="1200"
+                                                    >
+                                                    </Caption>
 
                                                 </Slide>
 
