@@ -6,6 +6,7 @@ import {productActions} from '../_actions/productActions'
 import {cartActions} from '../_actions/cartActions'
 import ProductItem from '../_components/Product/ProductItem'
 import RevSlider, { Slide, Caption} from 'react-rev-slider';
+import {Link} from 'react-router-dom'
 
 
 
