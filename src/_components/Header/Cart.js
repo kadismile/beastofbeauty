@@ -36,7 +36,7 @@ const Cart = (props)=>{
             <div data-toggle="dropdown" data-hover="dropdown" className="basket dropdown-toggle hidden-xs">
                 <a href="shopping_cart.html"><span className="price hidden-xs">Shopping Cart</span>
                     <span className="cart_count hidden-xs">
-                        <b>{cart.shoppingCartProducts.length} Items/ {symbol} {roundUp((total * rate), 1)}</b>
+                        <b>{cart.shoppingCartProducts.length} Items/ {symbol} {formatPrice(total  * rate)} {/*{roundUp((total * rate), 1)}*/}</b>
                     </span>
                 </a>
             </div>
@@ -85,7 +85,7 @@ const Cart = (props)=>{
                                                     {/*<a href={"/product/"+data.slug}><b>{data.name}</b></a>*/}
                                                     <Link to={"/product/"+data.slug}>{data.name}</Link>
                                                 </p>
-                                                {cart.quantityById[data.id]} x {symbol} { roundUp((Number(data.price) * rate), 1)/*roundUp(formatPrice(Number(data.price) * rate), 1)*/}
+                                                {cart.quantityById[data.id]} x {symbol} { formatPrice((Number(data.price) * rate))/*roundUp(formatPrice(Number(data.price) * rate), 1)*/}
 
 
 
@@ -133,5 +133,14 @@ const Cart = (props)=>{
 function roundUp(num, precision) {
     precision = Math.pow(10, precision)
     return Math.ceil(num * precision) / precision
+}
+
+function formatPrice (val) {
+    if(val !== ""){
+        return val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+        /* return  Math.round(val)*/
+    }else  {
+        return '--'
+    }
 }
 export default Cart

@@ -158,7 +158,7 @@ class ShoppingCart extends Component {
                                                                     </td>
                                                                     <td className="a-right hidden-xs">
                                                                         <span className="cart-price">
-                                                                            <span className="price">{symbol}{ Number(data.price * rate)}</span>
+                                                                            <span className="price">{symbol}{ formatPrice(Number(data.price * rate))}</span>
                                                                         </span>
                                                                     </td>
 
@@ -210,7 +210,7 @@ class ShoppingCart extends Component {
                                                                     </td>
 
                                                                     <td className="a-right movewishlist hidden-xs"><span
-                                                                        className="cart-price"> <span className="price">{symbol} { roundUp (Number(data.price * rate * cart.quantityById[data.id]), 1) }</span> </span>
+                                                                        className="cart-price"> <span className="price">{symbol} { formatPrice(Number(data.price * rate * cart.quantityById[data.id])) }</span> </span>
                                                                     </td>
                                                                     <td className="a-center last hidden-xs">
                                                                         <a className="button remove-item"
@@ -265,7 +265,7 @@ class ShoppingCart extends Component {
                                                                             </h2>
                                                                         <span
                                                                             className="cart-price">
-                                                                            <span className="price"> <b>{symbol} { roundUp (Number(data.price * rate * cart.quantityById[data.id]), 1) }</b></span>
+                                                                            <span className="price"> <b>{symbol} { formatPrice(Number(data.price * rate * cart.quantityById[data.id])) }</b></span>
                                                                         </span>
 
                                                                         <a className="pull-right remove-item"
@@ -399,13 +399,13 @@ class ShoppingCart extends Component {
                                                         <tfoot>
                                                         <tr>
                                                             <td colSpan="1" className="a-left" ><strong>Grand Total</strong></td>
-                                                            <td className="a-right" ><strong><span className="price">{symbol}{roundUp((total * rate), 1)}</span></strong></td>
+                                                            <td className="a-right" ><strong><span className="price">{symbol}{formatPrice((total * rate))}</span></strong></td>
                                                         </tr>
                                                         </tfoot>
                                                         <tbody>
                                                         <tr>
                                                             <td colSpan="1" className="a-left" > Subtotal </td>
-                                                            <td className="a-right" ><span className="price">{symbol}{roundUp((total * rate), 1)}</span></td>
+                                                            <td className="a-right" ><span className="price">{symbol}{formatPrice((total * rate))}</span></td>
 
                                                         </tr>
                                                         </tbody>
@@ -418,7 +418,7 @@ class ShoppingCart extends Component {
                                                         </form>
 */}
 
-                                                            {( roundUp((total * rate), 1) === 0 ? '' : <PaystackButton
+                                                            {( formatPrice((total * rate)) === 0 ? '' : <PaystackButton
                                                                 text="Make Payment"
                                                                 class="button btn-proceed-checkout"
                                                                 callback={this.callback}
@@ -499,6 +499,15 @@ function matchDispatchToProps(dispatch){
 function roundUp(num, precision) {
     precision = Math.pow(10, precision)
     return Math.ceil(num * precision) / precision
+}
+
+function formatPrice (val) {
+    if(val !== ""){
+        return val.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+        /* return  Math.round(val)*/
+    }else  {
+        return '--'
+    }
 }
 
 

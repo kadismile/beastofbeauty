@@ -268,7 +268,7 @@ class Header extends Component {
 
                                                }
                                            </div>
-                                           <div className="check"><a title="Checkout" href="shoppingCart.php"><span className="hidden-xs">Checkout</span></a> </div>
+                                           <div className="check"><a title="Checkout" href="#"><span className="hidden-xs">Checkout</span></a> </div>
                                            <div className="login">
                                                {
                                                    (authenticated === false ? <Link to={{pathname: "/login"}} ><span className="hidden-xs">Login</span></Link> :
