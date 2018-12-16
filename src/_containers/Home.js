@@ -111,8 +111,8 @@ class Home extends Component {
                                                         onClick: (e) => {
                                                             e.stopPropagation()
                                                             this.props.history.push({
-                                                                pathname: "/category/children",
-                                                                state: {id: 821, name: 'children'}
+                                                                pathname: "/category/promo",
+                                                                state: {id: 842, name: 'children'}
                                                             });
                                                         }
                                                     }}
