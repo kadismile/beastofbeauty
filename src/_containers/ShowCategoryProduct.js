@@ -82,6 +82,7 @@ class ShowCategoryProduct extends Component {
 
 
                                   <div className="page-title">
+                                      <br/>
                                       <h2 className="page-heading">
                                           <span className="page-heading-title">{this.dashString(this.props.match.params.cat_name)}</span>
 
